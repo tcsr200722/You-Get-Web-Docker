@@ -13,6 +13,9 @@ RUN apt-get install python3 -y
 # 安装FFmpeg
 RUN apt-get install ffmpeg -y
 
+# 安装bottle
+RUN pip3 install bottle
+
 # 安装you-get-web
 RUN rm -Rf /var/you-get
 
