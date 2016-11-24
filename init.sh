@@ -1,1 +1,2 @@
-su python3 var/you-get/you-get-web
+su cd /var/you-get/
+su python3 you-get-web
