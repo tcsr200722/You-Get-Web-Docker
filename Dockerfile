@@ -10,8 +10,6 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install python3 -y
 
 # 安装FFmpeg
-RUN add-apt-repository ppa:jon-severinsson/ffmpeg
-RUN apt-get update
 RUN apt-get install ffmpeg -y
 
 # 安装bottle
