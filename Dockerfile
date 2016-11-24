@@ -21,7 +21,7 @@ RUN rm -Rf /var/you-get
 
 RUN apt-get install git -y
 RUN git clone https://github.com/demoshow/you-get.git  /var/you-get
-RUN python3 /var/you-get/setup.py
+RUN python3 /var/you-get/setup.py install
 
 #RUN mkdir cldata
 COPY init.sh /cldata/init.sh
