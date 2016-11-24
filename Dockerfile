@@ -21,7 +21,7 @@ RUN rm -Rf /var/you-get
 
 RUN apt-get install git -y
 RUN git clone https://github.com/demoshow/you-get.git  /var/you-get
-RUN cd you-get
+RUN cd /var/you-get
 RUN ./setup.py install
 
 #RUN mkdir cldata
