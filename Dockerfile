@@ -20,7 +20,8 @@ RUN pip3 install bottle
 RUN rm -Rf /var/you-get
 
 RUN apt-get install git -y
-RUN git clone https://github.com/easychen/KODExplorer.git  /var/you-get
+RUN git clone https://github.com/demoshow/you-get.git  /var/you-get
+RUN cd you-get
 RUN ./setup.py install
 
 #RUN mkdir cldata
