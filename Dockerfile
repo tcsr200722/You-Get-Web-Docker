@@ -1,5 +1,4 @@
 FROM ubuntu:trusty
-MAINTAINER EasyChen <easychen@gmail.com>
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty multiverse" >> /etc/apt/sources.list
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty-updates multiverse" >> /etc/apt/sources.list
