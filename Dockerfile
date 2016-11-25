@@ -21,16 +21,12 @@ RUN rm -Rf /var/you-get
 
 RUN apt-get install git -y
 RUN git clone https://github.com/demoshow/you-get.git  /var/you-get
-RUN python3 /var/you-get/setup.py install
-
-#RUN mkdir cldata
-COPY init.sh /cldata/init.sh
-RUN chmod +x /cldata/init.sh
 
 WORKDIR /var/you-get
 VOLUME /var/you-get
 
+RUN python3 setup.py install
 
 EXPOSE 8080
 
-CMD /cldata/init.sh
+CMD su python3 you-get-web
