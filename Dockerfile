@@ -30,4 +30,4 @@ RUN python3 setup.py install
 
 EXPOSE 8080
 
-CMD sudo python3 you-get-web
+CMD python3 you-get-web
