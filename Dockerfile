@@ -21,7 +21,9 @@ RUN rm -Rf /var/you-get
 
 RUN apt-get install git -y
 #RUN git clone https://github.com/soimort/you-get.git  /var/you-get
-RUN git clone https://github.com/demoshow/you-get.git  /var/you-get
+#RUN git clone https://github.com/demoshow/you-get.git  /var/you-get
+RUN git clone https://github.com/aikunzhe/you-get.git  /var/you-get
+
 
 
 WORKDIR /var/you-get
